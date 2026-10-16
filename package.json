@@ -1,0 +1,12 @@
+{
+  "name": "case-arena-server-economy",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Кейс Арена — серверная игровая экономика для Render",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node server.js"
+  }
+}
