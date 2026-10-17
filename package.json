@@ -1,0 +1,13 @@
+{
+  "name": "case-arena",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Кейс Арена: сайт с игрой, рейтингом и приглашениями",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
