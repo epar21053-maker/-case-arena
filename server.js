@@ -487,7 +487,7 @@ wss.on('connection', ws => {
         try {
           const code = randomRoomCode();
           const id = crypto.randomBytes(9).toString('base64url');
-          const settings = netSettings(m.settings, { map: 'canyon', mode: 'bomb', diff: 1, to: 5, team: 'ct', botsEnabled: true, botsPerTeam: 2 });
+          const settings = netSettings(m.settings, { map: 'canyon', mode: 'bomb', diff: 1, to: 5, team: 'ct', botsEnabled: false, botsPerTeam: 0 });
           const room = { code, hostId: id, players: new Map(), settings, started: false, createdAt: Date.now() };
           const player = { id, name: netName(m.name), role: 'host', team: null, ws };
           room.players.set(id, player); netRooms.set(code, room); ws.netMeta = { room: code, id, role: 'host' };
